@@ -162,3 +162,19 @@ footer p:last-child {
   font-style: italic;
   color: #bdc3c7;
 }
+
+@media (min-width: 768px) {
+	#menu-button {
+		display: none;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.gallery {
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	}
+}

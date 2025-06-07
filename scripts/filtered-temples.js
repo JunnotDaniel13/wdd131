@@ -74,7 +74,38 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Add more temple objects here...
+  {
+    templeName: "Washington D.C. Temple",
+    location: "Kensington, Maryland, United States",
+    dedicated: "1974, November, 19",
+    area: 156558,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/800x500/washington_dc_temple-exterior-4.jpeg"
+  },
+  {
+    templeName: "Vancouver British Columbia Temple",
+    location: "Langley, British Columbia, Canada",
+    dedicated: "2010, May, 2",
+    area: 28165,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vancouver-british-columbia/800x500/vancouver-temple-766984-wallpaper.jpg"
+  },
+  {
+    templeName: "Trujillo Peru Temple",
+    location: "Trujillo, La Libertad, Peru",
+    dedicated: "2015, June, 21",
+    area: 28200,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/trujillo-peru/800x500/trujillo-peru-temple-exterior-1449769-wallpaper.jpg"
+  },
+  {
+    templeName: "Twin Falls Idaho Temple",
+    location: "Twin Falls, Idaho, United States",
+    dedicated: "2008, August, 24",
+    area: 31245,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/twin-falls-idaho/800x500/twin-falls-temple-850955-wallpaper.jpg"
+  },
 ];
 
 const templeGrid = document.querySelector(".gallery");

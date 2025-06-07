@@ -105,11 +105,9 @@ footer p {
 		grid-row: 2 / 3;
 	}
 
-
 	.weather-section h2 img {
 		display: none;
 	}
-
 
 	.weather-section h2::after {
 		content: " ⛅";

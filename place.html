@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		>
+		<title>Iceland - WDD 131</title>
+		<meta
+			name="description"
+			content="A country page about Iceland, created for the WDD 131 course assignment."
+		>
+		<meta name="author" content="Jerenason Junnot Daniel">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Iceland</h1>
+		</header>
+		<main>
+			<div class="hero">
+				<picture>
+					<source
+						srcset="images/hero-large.webp"
+						media="(min-width: 1000px)"
+					>
+					<source
+						srcset="images/hero-medium.webp"
+						media="(min-width: 500px)"
+					>
+					<img
+						src="images/hero-small.webp"
+						alt="Dramatic Icelandic Landscape"
+						width="500"
+						height="250"
+					>
+				</picture>
+			</div>
+			<section class="data-section">
+				<h2>Data</h2>
+				<dl>
+					<dt>Area:</dt>
+					<dd>103,000 km²</dd>
+					<dt>Population:</dt>
+					<dd>372,520</dd>
+					<dt>Capital:</dt>
+					<dd>Reykjavík</dd>
+					<dt>Language:</dt>
+					<dd>Icelandic</dd>
+					<dt>Currency:</dt>
+					<dd>Icelandic Króna (ISK)</dd>
+					<dt>Time Zone:</dt>
+					<dd>GMT (UTC+0)</dd>
+					<dt>Calling Code:</dt>
+					<dd>+354</dd>
+					<dt>Internet TLD:</dt>
+					<dd>.is</dd>
+				</dl>
+			</section>
+			<section class="weather-section">
+				<h2>Weather <img src="images/weather-icon.svg" alt="Weather Icon"></h2>
+				<dl>
+					<dt>Temperature:</dt>
+					<dd><span id="temperature">4</span> °C</dd>
+					<dt>Conditions:</dt>
+					<dd>Partly Cloudy</dd>
+					<dt>Wind:</dt>
+					<dd><span id="wind-speed">15</span> km/h</dd>
+					<dt>Wind Chill:</dt>
+					<dd><span id="wind-chill"></span></dd>
+				</dl>
+			</section>
+		</main>
+		<footer>
+			<p>
+				&copy;<span id="currentyear"></span> | Jerenason Junnot Daniel | Last
+				Modification: <span id="lastModified"></span>
+			</p>
+		</footer>
+	</body>
+</html>

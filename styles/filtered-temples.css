@@ -164,17 +164,38 @@ footer p:last-child {
 }
 
 @media (min-width: 768px) {
-	#menu-button {
-		display: none;
-	}
+  #menu-button {
+    display: none;
+  }
 
-	nav ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
+  nav {
+    background-color: var(--primary-color); 
+  }
 
-	.gallery {
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	}
+  nav ul {
+    display: flex !important; 
+    flex-direction: row; 
+    justify-content: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav ul li a {
+    padding: 1rem 1.5rem;
+    border-radius: 4px 4px 0 0; 
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: var(--secondary-color);
+  }
+  
+  main h2 {
+    font-size: 2.2rem;
+  }
+  
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
 }

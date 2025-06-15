@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>The Trailhead | Home</title>    
+    <meta
+      name="description"
+      content="Welcome to The Trailhead, your guide to the best local hiking trails. Discover new adventures and plan your next hike."
+    >
+    <meta name="author" content="Jerenason Junnot Daniel" >
+
+    <link rel="stylesheet" href="styles/style.css" />
+		<script src="scripts/script.js" defer></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+
+  </head>
+  <body>
+    <header>
+			<a href="index.html" class="logo">The Trailhead</a>
+			<nav>
+				<button id="menu-button" aria-label="Open Navigation Menu">
+					&#9776;
+				</button>
+				<ul id="nav-links">
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="trails.html">Trails</a></li>
+					<li><a href="submit.html">Submit a Trail</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero">
+				<img
+					src="images/hero.webp"
+					alt="A hiker looking out over a scenic mountain valley."
+				/>
+				<div class="hero-text">
+					<h1>Find Your Path</h1>
+					<p>Discover the best trails our region has to offer.</p>
+				</div>
+			</section>
+
+			<section class="welcome">
+				<h2>Welcome to The Trailhead</h2>
+				<p>
+					Whether you're a seasoned hiker or just looking for a weekend
+					stroll, our guide is your starting point for adventure. We've
+					curated a list of local trails complete with details on
+					difficulty, length, and what makes each one unique.
+				</p>
+			</section>
+
+			<section class="featured-trail">
+				<h2>Featured Trail of the Month</h2>
+				<div class="featured-content">
+					<img
+						src="images/featured-trail.webp"
+						alt="A serene forest path with sunlight filtering through the trees."
+						loading="lazy"
+					/>
+					<div class="featured-details">
+						<h3>Eagle Peak Loop</h3>
+						<p>
+							A challenging but rewarding 5-mile loop that offers
+							breathtaking panoramic views from the summit. Best for
+							experienced hikers, this trail features steep inclines
+							and rocky terrain, but the payoff is unforgettable.
+						</p>
+						<a href="trails.html" class="button">Explore More Trails</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; <span id="currentyear"></span> | Jerenason Junnot Daniel | WDD 131</p>
+      <p id="lastModified"></p>
+		</footer>
+  </body>
+</html>

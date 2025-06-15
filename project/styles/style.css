@@ -1,0 +1,363 @@
+:root {
+	--primary-color: #2c5f2d;
+	--secondary-color: #f5efe6;
+	--accent-color: #ff9f45;
+	--text-color: #333333;
+	--light-text-color: #ffffff;
+	--heading-font: "Montserrat", sans-serif;
+	--body-font: "Lato", sans-serif;
+	--border-radius: 8px;
+	--box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: var(--body-font);
+	background-color: var(--secondary-color);
+	color: var(--text-color);
+	line-height: 1.6;
+}
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1.5rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--heading-font);
+	color: var(--primary-color);
+	margin-bottom: 1rem;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+a {
+	color: var(--accent-color);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.button {
+	display: inline-block;
+	background-color: var(--accent-color);
+	color: var(--light-text-color);
+	padding: 12px 24px;
+	border-radius: var(--border-radius);
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.button:hover {
+	background-color: #e88e3a;
+	text-decoration: none;
+}
+
+header {
+	background-color: var(--primary-color);
+	color: var(--light-text-color);
+	padding: 1rem 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+	font-family: var(--heading-font);
+	font-size: 1.5rem;
+	color: var(--light-text-color);
+}
+.logo:hover {
+	text-decoration: none;
+}
+
+#menu-button {
+	display: block;
+	background: none;
+	border: none;
+	color: var(--light-text-color);
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+#nav-links {
+	display: none;
+	list-style: none;
+	flex-direction: column;
+	position: absolute;
+	top: 70px;
+	right: 0;
+	background-color: var(--primary-color);
+	width: 100%;
+	text-align: center;
+	z-index: 10;
+}
+
+#nav-links.open {
+	display: flex;
+}
+
+#nav-links li a {
+	display: block;
+	padding: 1rem;
+	color: var(--light-text-color);
+	font-weight: normal;
+}
+
+#nav-links li a:hover,
+#nav-links li a.active {
+	background-color: rgba(255, 255, 255, 0.1);
+	text-decoration: none;
+}
+
+footer {
+	background-color: var(--primary-color);
+	color: var(--light-text-color);
+	text-align: center;
+	padding: 1.5rem;
+	margin-top: 2rem;
+}
+footer a {
+	color: var(--light-text-color);
+}
+
+footer p:last-child {
+	margin-bottom: 0;
+}
+
+.hero {
+	position: relative;
+	text-align: center;
+	color: var(--light-text-color);
+	margin-bottom: 2rem;
+}
+.hero img {
+	width: 100%;
+	height: 40vh;
+	object-fit: cover;
+	border-radius: var(--border-radius);
+}
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 1.5rem;
+	border-radius: var(--border-radius);
+}
+.hero-text h1 {
+	color: var(--light-text-color);
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.welcome,
+.featured-trail {
+	background-color: #fff;
+	padding: 1.5rem;
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	margin-bottom: 2rem;
+}
+
+.featured-content img {
+	border-radius: var(--border-radius);
+	margin-bottom: 1rem;
+}
+
+.trails-page h1 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.filter-controls {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	margin-bottom: 2rem;
+}
+
+.filter-controls button {
+	font-family: var(--body-font);
+	font-size: 1rem;
+	padding: 10px 20px;
+	border: 2px solid var(--primary-color);
+	background-color: transparent;
+	color: var(--primary-color);
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.filter-controls button:hover,
+.filter-controls button.active {
+	background-color: var(--primary-color);
+	color: var(--light-text-color);
+}
+
+.trail-gallery {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+}
+
+.trail-card {
+	background-color: #fff;
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.trail-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+.trail-card-info {
+	padding: 1.5rem;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+.trail-card-info h3 {
+	margin-top: 0;
+}
+.trail-card-info p {
+	flex-grow: 1;
+}
+.trail-meta {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
+	font-weight: bold;
+	color: var(--primary-color);
+}
+
+.submit-page h1,
+.submit-page #submission-counter {
+	text-align: center;
+}
+
+#trail-form {
+	background-color: #fff;
+	padding: 2rem;
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	max-width: 600px;
+	margin: 1rem auto;
+}
+
+#trail-form label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+}
+
+#trail-form input,
+#trail-form textarea,
+#trail-form select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-family: var(--body-font);
+	font-size: 1rem;
+}
+
+#trail-form button {
+	width: 100%;
+	padding: 15px;
+	border: none;
+	background-color: var(--accent-color);
+	color: var(--light-text-color);
+	font-size: 1.1rem;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#trail-form button:hover {
+	background-color: #e88e3a;
+}
+
+.form-feedback {
+	text-align: center;
+	margin-top: 1.5rem;
+	font-size: 1.2rem;
+	color: var(--primary-color);
+	font-weight: bold;
+}
+
+@media (min-width: 768px) {
+	#menu-button {
+		display: none;
+	}
+
+	#nav-links {
+		display: flex;
+		position: static;
+		flex-direction: row;
+		width: auto;
+		background: none;
+	}
+
+	#nav-links li a {
+		padding: 0.5rem 1rem;
+	}
+
+	#nav-links li a:hover,
+	#nav-links li a.active {
+		background: none;
+		text-decoration: underline;
+	}
+
+	.hero-text h1 {
+		font-size: 3rem;
+	}
+
+	.featured-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	.featured-content img {
+		margin-bottom: 0;
+	}
+
+	.trail-gallery {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1024px) {
+	.trail-gallery {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

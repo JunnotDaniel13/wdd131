@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>The Trailhead | Submit a Trail</title>
+		<meta
+			name="description"
+			content="Help our community grow! Submit a new hiking trail you've discovered through our easy-to-use form."
+		/>
+		<meta name="author" content="Jerenason Junnot Daniel" />
+
+		<link rel="stylesheet" href="styles/style.css" />
+		<script src="scripts/script.js" defer></script>
+		<script src="scripts/submit.js" defer></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<a href="index.html" class="logo">The Trailhead</a>
+			<nav>
+				<button id="menu-button" aria-label="Open Navigation Menu">
+					&#9776;
+				</button>
+				<ul id="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="trails.html">Trails</a></li>
+					<li><a href="submit.html" class="active">Submit a Trail</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="submit-page">
+			<h1>Submit a New Trail</h1>
+			<p id="submission-counter">
+				Help our community grow by sharing your discoveries!
+			</p>
+
+			<form id="trail-form">
+				<label for="name">Your Name</label>
+				<input type="text" id="name" name="name" required />
+
+				<label for="email">Your Email</label>
+				<input type="email" id="email" name="email" required />
+
+				<label for="trailName">Trail Name</label>
+				<input type="text" id="trailName" name="trailName" required />
+
+				<label for="description">Trail Description</label>
+				<textarea
+					id="description"
+					name="description"
+					rows="5"
+					required
+				></textarea>
+
+				<label for="difficulty">Difficulty</label>
+				<select id="difficulty" name="difficulty" required>
+					<option value="" disabled selected>Select a difficulty...</option>
+					<option value="Easy">Easy</option>
+					<option value="Moderate">Moderate</option>
+					<option value="Hard">Hard</option>
+				</select>
+
+				<button type="submit">Submit Trail</button>
+			</form>
+
+			<div id="form-feedback" class="form-feedback"></div>
+		</main>
+
+		<footer>
+			<p>&copy; <span id="currentyear"></span> | Jerenason Junnot Daniel | WDD 131</p>
+			<p id="lastModified"></p>
+		</footer>
+	</body>
+</html>
